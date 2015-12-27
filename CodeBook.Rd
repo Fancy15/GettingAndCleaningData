@@ -2,10 +2,11 @@
 \alias{tidydata}
 \docType{data}
 \title{
-%%   Human Activity Recognition Smartphones Average mean and standard deviation of sensor signals
+Human Activity Recognition Smartphones Average mean and standard deviation of sensor signals
 }
 \description{
-%%  The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. This dataset contains 68 variables. 
+This dataset contains 68 variables that summarise the result of test data. There are two identifiers. subject -  ID of test subjects.  activityName - the name of activities were performed during the test
+
 }
 \usage{data("tidydata")}
 \format{
@@ -82,13 +83,19 @@
   }
 }
 \details{
-%%  ~~ If necessary, more details than the __description__ above ~~
+The column name pefix with letter t and f. 
+t means time
+f means frequency
+
+subject
+ Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
 }
 \source{
-%%  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 }
 \references{
-%%  https://class.coursera.org/getdata-035/human_grading/view/courses/975119/assessments/3/submissions
+https://class.coursera.org/getdata-035/human_grading/view/courses/975119/assessments/3/submissions
 }
 \examples{
 data(tidydata)
