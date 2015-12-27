@@ -1,105 +1,240 @@
-\name{tidydata}
-\alias{tidydata}
-\docType{data}
-\title{
+## tidydata	
 Human Activity Recognition Smartphones Average mean and standard deviation of sensor signals
-}
-\description{
-This dataset contains 68 variables that summarise the result of test data. There are two identifiers. subject -  ID of test subjects.  activityName - the name of activities were performed during the test
 
-}
-\usage{data("tidydata")}
-\format{
-  A data frame with 180 observations on the following 68 variables.
-  \describe{
-    \item{\code{subject}}{a numeric vector}
-    \item{\code{activityName}}{a factor with levels \code{LAYING} \code{SITTING} \code{STANDING} \code{WALKING} \code{WALKING_DOWNSTAIRS} \code{WALKING_UPSTAIRS}}
-    \item{\code{tBodyAccelerometerMeanX}}{a numeric vector}
-    \item{\code{tBodyAccelerometerMeanY}}{a numeric vector}
-    \item{\code{tBodyAccelerometerMeanZ}}{a numeric vector}
-    \item{\code{tBodyAccelerometerStandardDeviationX}}{a numeric vector}
-    \item{\code{tBodyAccelerometerStandardDeviationY}}{a numeric vector}
-    \item{\code{tBodyAccelerometerStandardDeviationZ}}{a numeric vector}
-    \item{\code{tGravityAccelerometerMeanX}}{a numeric vector}
-    \item{\code{tGravityAccelerometerMeanY}}{a numeric vector}
-    \item{\code{tGravityAccelerometerMeanZ}}{a numeric vector}
-    \item{\code{tGravityAccelerometerStandardDeviationX}}{a numeric vector}
-    \item{\code{tGravityAccelerometerStandardDeviationY}}{a numeric vector}
-    \item{\code{tGravityAccelerometerStandardDeviationZ}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkMeanX}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkMeanY}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkMeanZ}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkStandardDeviationX}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkStandardDeviationY}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkStandardDeviationZ}}{a numeric vector}
-    \item{\code{tBodyGyroscopeMeanX}}{a numeric vector}
-    \item{\code{tBodyGyroscopeMeanY}}{a numeric vector}
-    \item{\code{tBodyGyroscopeMeanZ}}{a numeric vector}
-    \item{\code{tBodyGyroscopeStandardDeviationX}}{a numeric vector}
-    \item{\code{tBodyGyroscopeStandardDeviationY}}{a numeric vector}
-    \item{\code{tBodyGyroscopeStandardDeviationZ}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkMeanX}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkMeanY}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkMeanZ}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkStandardDeviationX}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkStandardDeviationY}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkStandardDeviationZ}}{a numeric vector}
-    \item{\code{tBodyAccelerometerMagnitudeMean}}{a numeric vector}
-    \item{\code{tBodyAccelerometerMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{tGravityAccelerometerMagnitudeMean}}{a numeric vector}
-    \item{\code{tGravityAccelerometerMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkMagnitudeMean}}{a numeric vector}
-    \item{\code{tBodyAccelerometerJerkMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{tBodyGyroscopeMagnitudeMean}}{a numeric vector}
-    \item{\code{tBodyGyroscopeMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkMagnitudeMean}}{a numeric vector}
-    \item{\code{tBodyGyroscopeJerkMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{fBodyAccelerometerMeanX}}{a numeric vector}
-    \item{\code{fBodyAccelerometerMeanY}}{a numeric vector}
-    \item{\code{fBodyAccelerometerMeanZ}}{a numeric vector}
-    \item{\code{fBodyAccelerometerStandardDeviationX}}{a numeric vector}
-    \item{\code{fBodyAccelerometerStandardDeviationY}}{a numeric vector}
-    \item{\code{fBodyAccelerometerStandardDeviationZ}}{a numeric vector}
-    \item{\code{fBodyAccelerometerJerkMeanX}}{a numeric vector}
-    \item{\code{fBodyAccelerometerJerkMeanY}}{a numeric vector}
-    \item{\code{fBodyAccelerometerJerkMeanZ}}{a numeric vector}
-    \item{\code{fBodyAccelerometerJerkStandardDeviationX}}{a numeric vector}
-    \item{\code{fBodyAccelerometerJerkStandardDeviationY}}{a numeric vector}
-    \item{\code{fBodyAccelerometerJerkStandardDeviationZ}}{a numeric vector}
-    \item{\code{fBodyGyroscopeMeanX}}{a numeric vector}
-    \item{\code{fBodyGyroscopeMeanY}}{a numeric vector}
-    \item{\code{fBodyGyroscopeMeanZ}}{a numeric vector}
-    \item{\code{fBodyGyroscopeStandardDeviationX}}{a numeric vector}
-    \item{\code{fBodyGyroscopeStandardDeviationY}}{a numeric vector}
-    \item{\code{fBodyGyroscopeStandardDeviationZ}}{a numeric vector}
-    \item{\code{fBodyAccelerometerMagnitudeMean}}{a numeric vector}
-    \item{\code{fBodyAccelerometerMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{fBodyBodyAccelerometerJerkMagnitudeMean}}{a numeric vector}
-    \item{\code{fBodyBodyAccelerometerJerkMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{fBodyBodyGyroscopeMagnitudeMean}}{a numeric vector}
-    \item{\code{fBodyBodyGyroscopeMagnitudeStandardDeviation}}{a numeric vector}
-    \item{\code{fBodyBodyGyroscopeJerkMagnitudeMean}}{a numeric vector}
-    \item{\code{fBodyBodyGyroscopeJerkMagnitudeStandardDeviation}}{a numeric vector}
-  }
-}
-\details{
-The column name pefix with letter t and f. 
-t means time
-f means frequency
+### Description
+
+This dataset contains 68 variables that summarise the result of test data. There are two identifiers. subject - ID of test subjects. activityName - the name of activities were performed during the test
+
+### Usage
+
+data("tidydata")
+
+### Format
+
+A data frame with 180 observations on the following 68 variables.
 
 subject
- Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+a numeric vector
 
-}
-\source{
+activityName
+a factor with levels LAYING SITTING STANDING WALKING WALKING_DOWNSTAIRS WALKING_UPSTAIRS
+
+tBodyAccelerometerMeanX
+a numeric vector
+
+tBodyAccelerometerMeanY
+a numeric vector
+
+tBodyAccelerometerMeanZ
+a numeric vector
+
+tBodyAccelerometerStandardDeviationX
+a numeric vector
+
+tBodyAccelerometerStandardDeviationY
+a numeric vector
+
+tBodyAccelerometerStandardDeviationZ
+a numeric vector
+
+tGravityAccelerometerMeanX
+a numeric vector
+
+tGravityAccelerometerMeanY
+a numeric vector
+
+tGravityAccelerometerMeanZ
+a numeric vector
+
+tGravityAccelerometerStandardDeviationX
+a numeric vector
+
+tGravityAccelerometerStandardDeviationY
+a numeric vector
+
+tGravityAccelerometerStandardDeviationZ
+a numeric vector
+
+tBodyAccelerometerJerkMeanX
+a numeric vector
+
+tBodyAccelerometerJerkMeanY
+a numeric vector
+
+tBodyAccelerometerJerkMeanZ
+a numeric vector
+
+tBodyAccelerometerJerkStandardDeviationX
+a numeric vector
+
+tBodyAccelerometerJerkStandardDeviationY
+a numeric vector
+
+tBodyAccelerometerJerkStandardDeviationZ
+a numeric vector
+
+tBodyGyroscopeMeanX
+a numeric vector
+
+tBodyGyroscopeMeanY
+a numeric vector
+
+tBodyGyroscopeMeanZ
+a numeric vector
+
+tBodyGyroscopeStandardDeviationX
+a numeric vector
+
+tBodyGyroscopeStandardDeviationY
+a numeric vector
+
+tBodyGyroscopeStandardDeviationZ
+a numeric vector
+
+tBodyGyroscopeJerkMeanX
+a numeric vector
+
+tBodyGyroscopeJerkMeanY
+a numeric vector
+
+tBodyGyroscopeJerkMeanZ
+a numeric vector
+
+tBodyGyroscopeJerkStandardDeviationX
+a numeric vector
+
+tBodyGyroscopeJerkStandardDeviationY
+a numeric vector
+
+tBodyGyroscopeJerkStandardDeviationZ
+a numeric vector
+
+tBodyAccelerometerMagnitudeMean
+a numeric vector
+
+tBodyAccelerometerMagnitudeStandardDeviation
+a numeric vector
+
+tGravityAccelerometerMagnitudeMean
+a numeric vector
+
+tGravityAccelerometerMagnitudeStandardDeviation
+a numeric vector
+
+tBodyAccelerometerJerkMagnitudeMean
+a numeric vector
+
+tBodyAccelerometerJerkMagnitudeStandardDeviation
+a numeric vector
+
+tBodyGyroscopeMagnitudeMean
+a numeric vector
+
+tBodyGyroscopeMagnitudeStandardDeviation
+a numeric vector
+
+tBodyGyroscopeJerkMagnitudeMean
+a numeric vector
+
+tBodyGyroscopeJerkMagnitudeStandardDeviation
+a numeric vector
+
+fBodyAccelerometerMeanX
+a numeric vector
+
+fBodyAccelerometerMeanY
+a numeric vector
+
+fBodyAccelerometerMeanZ
+a numeric vector
+
+fBodyAccelerometerStandardDeviationX
+a numeric vector
+
+fBodyAccelerometerStandardDeviationY
+a numeric vector
+
+fBodyAccelerometerStandardDeviationZ
+a numeric vector
+
+fBodyAccelerometerJerkMeanX
+a numeric vector
+
+fBodyAccelerometerJerkMeanY
+a numeric vector
+
+fBodyAccelerometerJerkMeanZ
+a numeric vector
+
+fBodyAccelerometerJerkStandardDeviationX
+a numeric vector
+
+fBodyAccelerometerJerkStandardDeviationY
+a numeric vector
+
+fBodyAccelerometerJerkStandardDeviationZ
+a numeric vector
+
+fBodyGyroscopeMeanX
+a numeric vector
+
+fBodyGyroscopeMeanY
+a numeric vector
+
+fBodyGyroscopeMeanZ
+a numeric vector
+
+fBodyGyroscopeStandardDeviationX
+a numeric vector
+
+fBodyGyroscopeStandardDeviationY
+a numeric vector
+
+fBodyGyroscopeStandardDeviationZ
+a numeric vector
+
+fBodyAccelerometerMagnitudeMean
+a numeric vector
+
+fBodyAccelerometerMagnitudeStandardDeviation
+a numeric vector
+
+fBodyBodyAccelerometerJerkMagnitudeMean
+a numeric vector
+
+fBodyBodyAccelerometerJerkMagnitudeStandardDeviation
+a numeric vector
+
+fBodyBodyGyroscopeMagnitudeMean
+a numeric vector
+
+fBodyBodyGyroscopeMagnitudeStandardDeviation
+a numeric vector
+
+fBodyBodyGyroscopeJerkMagnitudeMean
+a numeric vector
+
+fBodyBodyGyroscopeJerkMagnitudeStandardDeviation
+a numeric vector
+
+### Details
+
+The column name pefix with letter t and f. t means time f means frequency
+
+subject Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+
+### Source
+
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-}
-\references{
+
+### References
+
 https://class.coursera.org/getdata-035/human_grading/view/courses/975119/assessments/3/submissions
-}
-\examples{
+
+### Examples
+
 data(tidydata)
-## maybe str(tidydata) ; plot(tidydata) ...
+maybe str(tidydata) ; plot(tidydata) ...
 
 str(tidydata)
 'data.frame':	180 obs. of  68 variables:
@@ -171,5 +306,3 @@ str(tidydata)
  $ fBodyBodyGyroscopeMagnitudeStandardDeviation        : num  -0.321 -0.183 -0.398 -0.932 -0.979 ...
  $ fBodyBodyGyroscopeJerkMagnitudeMean                 : num  -0.319 -0.635 -0.282 -0.99 -0.995 ...
  $ fBodyBodyGyroscopeJerkMagnitudeStandardDeviation    : num  -0.382 -0.694 -0.392 -0.987 -0.995 ...
-}
-\keyword{datasets}
